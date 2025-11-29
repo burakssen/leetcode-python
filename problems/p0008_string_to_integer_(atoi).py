@@ -34,7 +34,7 @@ class Solution:
 
 # Tests
 @pytest.mark.parametrize(
-    "x, expected",
+    "s, expected",
     [
         ("42", 42),
         (" -42", -42),
@@ -43,7 +43,7 @@ class Solution:
         ("words and 987", 0),
     ],
 )
-def test_solution(x, expected):
+def test_solution(s, expected):
     sol = Solution()
-    result = sol.myAtoi(x)
+    result = sol.myAtoi(s)
     assert result == expected
